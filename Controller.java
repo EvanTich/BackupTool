@@ -222,6 +222,18 @@ public class Controller {
     }
 
     @FXML
+    public void info() {
+        Alert info = new Alert(Alert.AlertType.INFORMATION);
+        info.setTitle("Information");
+        info.setHeaderText("Program Information");
+        info.setContentText(
+                "This backup program was made by Evan Tichenor (evan.tichenor@gmail.com). Thanks for using it!"
+        );
+
+        info.showAndWait();
+    }
+
+    @FXML
     public void exit() {
         primaryStage.close();
     }
